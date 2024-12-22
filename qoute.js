@@ -1,6 +1,19 @@
+var quotes=[
+  `  “Be yourself; everyone else is already taken.”
+― Oscar Wilde`,
+`“So many books, so little time.”
+― Frank Zappa`,
+`“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”
+― Albert Einstein`,
+`“A room without books is like a body without a soul.”
+― Marcus Tullius Cicero`,
+`
+“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.”
+― Bernard M. Baruch`,
+
+]
+
 function getQuote(){
-    document.getElementById('paraQuote').innerHTML='<p id="paraQuote" class="m-5 d-block">“Be yourself; everyone else is already taken.”</p>'
-    document.getElementById('capQuote').innerHTML='<p id="capQuote" class="m-5 fs-3">― Oscar Wilde</p>'
-
+    var random= Math.floor(Math.random() * quotes.length)
+    document.getElementById('paraQuote').innerHTML= quotes[random]
 }
-
